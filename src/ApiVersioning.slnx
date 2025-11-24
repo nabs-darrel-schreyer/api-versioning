@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ApiVersioning.Dtos/ApiVersioning.Dtos.csproj" Id="ed40ca25-0dd0-4d6e-bdca-dad9db52732c" />
+  <Project Path="ApiVersioning.WebApi/ApiVersioning.WebApi.csproj" Id="8f50563d-4e96-4045-a9da-abbb73d26fc2" />
+</Solution>

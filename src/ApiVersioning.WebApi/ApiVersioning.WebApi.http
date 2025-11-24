@@ -1,0 +1,28 @@
+@ApiVersioning.WebApi_HostAddress = https://localhost:7031
+@assetId = A001
+
+### Use URL Segement  ========================================
+
+### 200 OK
+GET {{ApiVersioning.WebApi_HostAddress}}/api/v1/assets/{{assetId}}
+Accept: application/json
+
+### 200 OK
+GET {{ApiVersioning.WebApi_HostAddress}}/api/v2/assets/{{assetId}}
+Accept: application/json
+
+
+
+### Use Headers ==============================================
+
+## 200 OK (v2 support headers)
+GET {{ApiVersioning.WebApi_HostAddress}}/api/assets/{{assetId}}
+x-api-version: 2
+Accept: application/json
+
+### 400 Bad Request (v1 does not support headers)
+GET {{ApiVersioning.WebApi_HostAddress}}/api/assets/{{assetId}}
+x-api-version: 1
+Accept: application/json
+
+###
